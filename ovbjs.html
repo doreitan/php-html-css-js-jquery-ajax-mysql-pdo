@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<HTML>
+	<Head>
+		<meta charset="utf-8">
+		<title> Welcome to OVB  </title>
+		 <!--"-------linking to the css file-------"-->
+			<h3> Please give us few details about yourself: </h3>
+			<link type="text/css" rel="stylesheet" href="ovbjs.css">
+		<!--"-------linking Jquery library-------"-->
+			<script src="jQuery-3.2.1.js"></script>
+		 <!--"-------linking to my js scripts page -------"-->
+		 	 <script src = "ovb.js"></script>
+	</Head>
+	
+	<Body>
+			
+		<form action="ovbjs.php" method="post" name="my_Form">
+			<BR> <BR>
+		First Name:	<input type="textbox" type="text" name="txtfirstname" id="firstname" placeholder="First Name" value=""> 
+		<BR> <BR>
+		Last Name:	<input type="text" id="lastname" name="txtlastname" placeholder="Last Name" value="">
+		<BR> <BR>
+        Age:        <input type="mumber" name="age" id="age" placeholder="between 18-120" value="" >
+		<BR> <BR>
+		Email:      <input type="email"name="txtemail" id ="email" placeholder="someone@someone.de" value =""> 
+		<BR> <BR>
+		Phone: 	    <input type="Phone" name="txtphone"	id="phone" 	placeholder="0154789922" value="" >
+	
+		<p> Nationality: 
+		 <div class="styled-select"> 
+		    <select id ="nationality" name ="nationality">
+			  <option value="0"> 	Please select a nationality	</option>
+			  <option value="Israel"> Israel </option>
+			  <option value="Germany" > Germany </option>
+			  <option value="France" > 	France 	</option>
+			  <option value="Spain" > Spain </option>
+			  <option value="Italy"> Italy 	</option>
+			
+			</select>
+		 </div>
+		<BR>
+		your site:	<input	type="url"	name="txturl" id="url" placeholder= "http://www.ovb.de" value="">
+		<BR><BR>
+		
+		Comments:
+		<div class="styled-Comments">
+			<textarea name="txtcomments" id ="comments"	class="styled-Comments" value=""></textarea>
+		</div>
+		<BR>
+		
+		<fieldset>	First time on our site?	<input 	type="checkbox" name = "firsttime" value="" id="firsttime">
+		</fieldset>
+		<BR><BR>
+		
+		<Fieldset>	<input type="radio" name="gender" value="F" id="gender"> female <BR>
+				    <input type="radio" name="gender" value="M" id="gender"> Male <BR><BR>
+		</fieldset> <BR> 			
+		
+		 <input	type="reset" >
+	
+		<input 	type="submit" onclick="return validate_data();" value="send" id="name-submit">
+		<BR>
+		
+		<div id="display-results"></div><BR>
+					
+	</form>
+	</Body>
+	
+	
+</HTML>
